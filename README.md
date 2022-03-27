@@ -1,6 +1,6 @@
-# Copy-Border-Radius
+# Copy Border Radius
 
-The border-radius property can have multiple values changed. Preview how the shape looks while changing these values.
+A propriedade border-radius pode ter vários valores alterados. Visualize a aparência da forma ao alterar esses valores.
 
 ## O usuario pode:
 
