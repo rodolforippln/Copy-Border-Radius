@@ -1,3 +1,8 @@
+:root {
+    --primary: #fcbc0e;
+    --secondary: #3a638f;   
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +17,7 @@
     align-items: center;
     width: 100vw;
     min-height: 100vh;
-    background-color: #3a638f;
+    background-color: var(--secondary);
 }
 
 .header {
@@ -46,7 +51,7 @@
 }
 
 .links a p:hover{
-    color: #fcbc0e;    
+    color: var(--primary);    
 }
 
 .github, .linkedin {
@@ -69,7 +74,7 @@
     top: 0;
     left: -9px;
     width: 318px;
-    background-color: #fcbc0e;
+    background-color: var(--primary);
     -webkit-appearance: none;
     height: 0px;
 }
@@ -79,7 +84,7 @@
     top: 300px;
     left: -9px;
     width: 318px;
-    background-color: #fcbc0e;
+    background-color: var(--primary);
     -webkit-appearance: none;
     height: 0px;
 }
@@ -89,7 +94,7 @@
     top: 150px;
     left: -159px;
     width: 318px;
-    background-color: #fcbc0e;
+    background-color: var(--primary);
     -webkit-appearance: none;
     height: 0px;
 }
@@ -99,14 +104,14 @@
     top: 150px;
     left: 141px;
     width: 318px;
-    background-color: #fcbc0e;
+    background-color: var(--primary);
     -webkit-appearance: none;
     height: 0px;
 }
 
 input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
-    background-color: #fcbc0e;
+    background-color: var(--primary);
     height: 18px;
     width: 18px;
     border-radius: 50%;
@@ -127,7 +132,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     width: 100%;
     height: 100%;
     border-radius: 77% 23% 75% 25% / 18% 65% 35% 82%;
-    background-color: #fcbc0e;
+    background-color: var(--primary);
     box-shadow: 10vmin 10vmin 0 rgb(255 255 255 / 7%);
 }
 
@@ -143,6 +148,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 .box-result {
     display: flex;
 }
+
 #result-copy {
     color: black;
     background-color: #e2e1e1;
@@ -150,6 +156,18 @@ input[type="range"]::-webkit-slider-thumb:hover {
     font-size: 1.1rem;
     width: 360px;
     text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .box-result {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #result-copy {
+        font-size: 0.8rem;
+    }
 }
 
 .button-copy {
@@ -160,7 +178,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     align-items: center;
     padding: 15px 30px;
     color: black;
-    background-color: #fcbc0e;
+    background-color: var(--primary);
     font-weight: 600;
     cursor: pointer;    
 }
